@@ -42,7 +42,7 @@ webix.ready(function () {
                         columns: [
                             {id: "Timestamp", header: "Timestamp", width: 175, format: tsFormatter},
                             {id: "Hostname", header: "Hostname", width: 150},
-                            {id: "Application", header: "Application", width: 150},
+                        //    {id: "Application", header: "Application", width: 150},
                             {id: "Message", header: "Message", width: 1200}
                         ],
                         data: []

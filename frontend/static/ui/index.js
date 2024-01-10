@@ -33,7 +33,7 @@ webix.ready(function () {
                         ],
                         select: "row",
                         data: [],
-                        width: 300
+                        width: 50
                     },
                     {
                         view: "datatable",
@@ -43,7 +43,7 @@ webix.ready(function () {
                             {id: "Timestamp", header: "Timestamp", width: 175, format: tsFormatter},
                             {id: "Hostname", header: "Hostname", width: 150},
                             {id: "Application", header: "Application", width: 150},
-                            {id: "Message", header: "Message", width: 900}
+                            {id: "Message", header: "Message", width: 1050}
                         ],
                         data: []
                     }

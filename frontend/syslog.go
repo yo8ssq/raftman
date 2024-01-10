@@ -118,6 +118,7 @@ func (f *syslogServerFrontend) toLogEntry(logParts format.LogParts) *api.LogEntr
 	case syslog.RFC3164:
 		if val, ok := logParts["timestamp"].(time.Time); ok {
 			e.Timestamp = val
+			e.Timestamp = time.Now()
 		} else {
 			e.Timestamp = time.Now()
 		}
@@ -133,6 +134,7 @@ func (f *syslogServerFrontend) toLogEntry(logParts format.LogParts) *api.LogEntr
 	case syslog.RFC5424:
 		if val, ok := logParts["timestamp"].(time.Time); ok {
 			e.Timestamp = val
+			e.Timestamp = time.Now()
 		} else {
 			e.Timestamp = time.Now()
 		}

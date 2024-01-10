@@ -38,7 +38,7 @@ webix.ready(function () {
                     {
                         view: "datatable",
                         id: "queryList",
-                        //autoConfig: true,
+                        autoConfig: true,
                         columns: [
                             {id: "Timestamp", header: "Timestamp", width: 175, format: tsFormatter},
                             {id: "Hostname", header: "Hostname", width: 150},

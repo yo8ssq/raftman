@@ -4,9 +4,6 @@ import (
 	"bytes"
 	"database/sql"
 	"fmt"
-	_ "github.com/mattn/go-sqlite3"
-	"github.com/pierredavidbelanger/raftman/api"
-	"github.com/pierredavidbelanger/raftman/utils"
 	"log"
 	"math"
 	"net/url"
@@ -14,6 +11,11 @@ import (
 	"path/filepath"
 	"sync"
 	"time"
+
+	"github.com/yo8ssq/raftman/api"
+	"github.com/yo8ssq/raftman/utils"
+
+	_ "github.com/mattn/go-sqlite3"
 )
 
 type sqliteBackend struct {

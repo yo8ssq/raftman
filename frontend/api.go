@@ -2,10 +2,11 @@ package frontend
 
 import (
 	"encoding/json"
-	"github.com/pierredavidbelanger/raftman/api"
-	"github.com/pierredavidbelanger/raftman/spi"
 	"net/http"
 	"net/url"
+
+	"github.com/yo8ssq/raftman/api"
+	"github.com/yo8ssq/raftman/spi"
 )
 
 type apiFrontend struct {

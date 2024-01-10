@@ -1,9 +1,10 @@
 package spi
 
 import (
-	"github.com/pierredavidbelanger/raftman/api"
 	"io"
 	"net/url"
+
+	"github.com/yo8ssq/raftman/api"
 )
 
 type LogBackend interface {

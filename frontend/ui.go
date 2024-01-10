@@ -1,10 +1,11 @@
 package frontend
 
 import (
-	"github.com/pierredavidbelanger/raftman/spi"
 	"net/http"
 	"net/url"
 	"os"
+
+	"github.com/yo8ssq/raftman/spi"
 )
 
 type uiFrontend struct {

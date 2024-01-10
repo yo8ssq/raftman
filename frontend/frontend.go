@@ -2,8 +2,9 @@ package frontend
 
 import (
 	"fmt"
-	"github.com/pierredavidbelanger/raftman/spi"
 	"net/url"
+
+	"github.com/yo8ssq/raftman/spi"
 )
 
 func NewFrontend(e spi.LogEngine, frontendURL *url.URL) (spi.LogFrontend, error) {

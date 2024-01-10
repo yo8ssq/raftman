@@ -38,12 +38,12 @@ webix.ready(function () {
                     {
                         view: "datatable",
                         id: "queryList",
-                        autoConfig: true,
+                        //autoConfig: true,
                         columns: [
                             {id: "Timestamp", header: "Timestamp", width: 175, format: tsFormatter},
                             {id: "Hostname", header: "Hostname", width: 150},
                             {id: "Application", header: "Application", width: 150},
-                            {id: "Message", header: "Message", fillspace: true}
+                            {id: "Message", header: "Message", width: 1200}
                         ],
                         data: []
                     }

@@ -33,7 +33,7 @@ webix.ready(function () {
                         ],
                         select: "row",
                         data: [],
-                        width: 200
+                        width: 225
                     },
                     {
                         view: "datatable",

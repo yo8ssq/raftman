@@ -29,7 +29,7 @@ webix.ready(function () {
                         columns: [
                             {id: "Hostname", header: "Hostname", width: 150},
                             {id: "Application", header: "Application", width: 150},
-                            {id: "Count", header: "Count", fillspace: true}
+                            {id: "Count", header: "Count", width: 150}
                         ],
                         select: "row",
                         data: [],
@@ -43,7 +43,7 @@ webix.ready(function () {
                             {id: "Timestamp", header: "Timestamp", width: 175, format: tsFormatter},
                             {id: "Hostname", header: "Hostname", width: 150},
                             {id: "Application", header: "Application", width: 150},
-                            {id: "Message", header: "Message", fillspace: true}
+                            {id: "Message", header: "Message", width: 900}
                         ],
                         data: []
                     }

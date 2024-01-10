@@ -32,8 +32,8 @@ webix.ready(function () {
                             {id: "Count", header: "Count", width: 150}
                         ],
                         select: "row",
-                        data: []
-                    //    width: 300
+                        data: [],
+                        width: 150
                     },
                     {
                         view: "datatable",

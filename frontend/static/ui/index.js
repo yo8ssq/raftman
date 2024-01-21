@@ -27,13 +27,13 @@ webix.ready(function () {
                         id: "queryStat",
                         //autoConfig: true,
                         columns: [
-                            {id: "Hostname", header: "Hostname", width: 150},
-                            {id: "Application", header: "Application", width: 150},
+                            {id: "Hostname", header: "I-gate", width: 150},
+                        //    {id: "Application", header: "Application", width: 150},
                             {id: "Count", header: "Count", width: 150}
                         ],
                         select: "row",
                         data: [],
-                        width: 240
+                        width: 150
                     },
                     {
                         view: "datatable",
@@ -41,8 +41,8 @@ webix.ready(function () {
                         //autoConfig: true,
                         columns: [
                             {id: "Timestamp", header: "Timestamp", width: 175, format: tsFormatter},
-                            {id: "Hostname", header: "Hostname", width: 150},
-                            {id: "Application", header: "Application", width: 150},
+                            {id: "Hostname", header: "I-gate", width: 150},
+                        //    {id: "Application", header: "Application", width: 150},
                             {id: "Message", header: "Message", width: 1050}
                         ],
                         data: []

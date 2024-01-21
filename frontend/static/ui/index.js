@@ -27,7 +27,7 @@ webix.ready(function () {
                         id: "queryStat",
                         //autoConfig: true,
                         columns: [
-                            {id: "Hostname", header: "Hostname", width: 150},
+                            {id: "Hostname", header: "I-gate", width: 150},
                             {id: "Application", header: "Application", width: 150},
                             {id: "Count", header: "Count", width: 150}
                         ],
@@ -41,7 +41,7 @@ webix.ready(function () {
                         //autoConfig: true,
                         columns: [
                             {id: "Timestamp", header: "Timestamp", width: 175, format: tsFormatter},
-                            {id: "Hostname", header: "Hostname", width: 150},
+                            {id: "Hostname", header: "I-gate", width: 150},
                             {id: "Application", header: "Application", width: 150},
                             {id: "Message", header: "Message", width: 900}
                         ],
@@ -92,11 +92,11 @@ webix.ready(function () {
             });
             if (data.Stat) {
                 $.each(data.Stat, function (hostname, applications) {
-                    queryStat.add({
-                        id: hostname + "-*",
-                        Hostname: hostname,
-                        Application: "*"
-                    });
+                    //queryStat.add({
+                    //    id: hostname + "-*",
+                    //    Hostname: hostname,
+                    //    Application: "*"
+                    //});
                     $.each(applications, function (application, count) {
                         queryStat.add({
                             id: hostname + "-" + application,

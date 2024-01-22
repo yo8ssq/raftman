@@ -28,12 +28,12 @@ webix.ready(function () {
                         //autoConfig: true,
                         columns: [
                             {id: "Hostname", header: "I-gate", width: 150},
-                            {id: "Application", header: "Application", width: 150},
-                            {id: "Count", header: "Count", width: 150}
+                        //    {id: "Application", header: "Application", width: 150},
+                        //    {id: "Count", header: "Count", width: 150}
                         ],
                         select: "row",
                         data: [],
-                        width: 250
+                        width: 110
                     },
                     {
                         view: "datatable",
@@ -92,18 +92,18 @@ webix.ready(function () {
             });
             if (data.Stat) {
                 $.each(data.Stat, function (hostname, applications) {
-                    //queryStat.add({
-                    //    id: hostname + "-*",
-                    //    Hostname: hostname,
-                    //    Application: "*"
-                    //});
+                    queryStat.add({
+                        id: hostname + "-*",
+                        Hostname: hostname,
+                        Application: "*"
+                    });
                     $.each(applications, function (application, count) {
-                        queryStat.add({
-                            id: hostname + "-" + application,
-                            Hostname: hostname,
-                            Application: application,
-                            Count: count
-                        });
+                    //    queryStat.add({
+                    //        id: hostname + "-" + application,
+                    //        Hostname: hostname,
+                    //        Application: application,
+                    //        Count: count
+                    //    });
                     });
                 });
             }
